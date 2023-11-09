@@ -31,9 +31,22 @@ const comment =ref('');
 <template>
     <h1>Anmeldelse af besøg</h1>
     <form v-on:submit.prevent="onSubmitForm">
-    <input type="text" v-model="title" placeholder="Titel"  /><br>
-    <input type="text" v-model="comment" placeholder ="Kommentar" /><br>
+    <input type="text" id="titelfelt" v-model="title" placeholder="Titel"  /><br>
+    <input type="text" id="tekstfelt" v-model="comment" placeholder ="Kommentar" /><br>
     <button type="submit">Tilføj kommentar</button>
     </form>
 </template>
 
+<style>
+#titelfelt{
+    border: 1px solid black;
+    width: 300px;
+    height: 20px;
+}
+
+#tekstfelt{
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+}
+</style>

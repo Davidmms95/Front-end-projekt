@@ -3,19 +3,14 @@ const props = defineProps(['title', 'comment']);
 </script>
 
 <template> 
-    <div class="centrer2">
             <li>
                 <h2>{{ title }}</h2>
                 <p>{{ comment }}</p>
             </li>
-    </div>
 </template>
 
 <style>
 
-.centrer2{
-    text-align: center;
-}
 li{
     list-style-type: none;
 }
