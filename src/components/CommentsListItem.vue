@@ -3,13 +3,21 @@ const props = defineProps(['title', 'comment']);
 </script>
 
 <template> 
+    <div class="centered-list">
             <li>
                 <h2>{{ title }}</h2>
                 <p>{{ comment }}</p>
             </li>
+        </div>
 </template>
 
 <style>
+.centered-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
 
 li{
     list-style-type: none;

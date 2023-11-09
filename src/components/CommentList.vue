@@ -41,7 +41,9 @@ const getComments = () => {
 </template>
 
 <style>
-
+ul{
+    padding: 0px;
+}
 .centrer{
     text-align: center;
 }
